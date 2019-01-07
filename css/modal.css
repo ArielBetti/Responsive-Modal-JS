@@ -63,7 +63,6 @@ body {
 
 .modal-wb input {
   text-align: center;
-  color: #fff !important;
   font-size: 1.25em;
   background: transparent;
   border-top: 0;
@@ -73,6 +72,10 @@ body {
   font-family: "Quicksand";
   max-width: 260px;
   min-width: 170px;
+}
+
+.modal-wb input::placeholder{
+  color: #fff;
 }
 
 .modal-wb h2 {
