@@ -63,7 +63,7 @@ body {
 
 .modal-wb input {
   text-align: center;
-  color: #fff;
+  color: #fff !important;
   font-size: 1.25em;
   background: transparent;
   border-top: 0;
