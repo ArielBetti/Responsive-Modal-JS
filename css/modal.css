@@ -7,18 +7,6 @@ body {
   background: rgba(66,134,244,10);
   }
 
-.conteudo {
-  margin-top: 80px;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  color: white;
-  max-width: 1px;
-  color: transparent;
-}
-
 .const {
   display: flex;
   align-items: center;
