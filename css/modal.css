@@ -1,0 +1,130 @@
+body html {
+  margin: 0px;
+  padding: 0px;
+  }
+
+body {
+  background: rgba(66,134,244,10);
+  height: 1200px;
+  }
+
+.const {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.const p {
+  margin-top: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.btn-inicia {
+  color: white;
+  border: solid 2px white;
+  padding: 10px;
+  background: rgba(66,134,244,10);
+  box-shadow: 0 0 0 2px #a4a4a4;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.modal-container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.modal-wb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: rgba(66,134,244,0.6);
+  padding: 20px;
+  width: 500px;
+  min-width: 160px;
+  color: white;
+  border-radius: 0px;
+  border: solid #f3f3f3 3px;
+  box-shadow: 0 0 0 3px #a4a4a4;
+  position: relative
+}
+
+.modal-wb input {
+  text-align: center;
+  color: #fff;
+  font-size: 1.25em;
+  background: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: solid 3px white;
+  font-family: "Quicksand";
+  max-width: 260px;
+  min-width: 170px;
+}
+
+.modal-wb h2 {
+  font-size: 2.25em;
+  line-height: 1.4em;
+}
+
+.modal-wb p {
+  font-size: 1.25em;
+  line-height: 1.90em;
+  margin-top: -10px;
+}
+
+.btn-enviar {
+  margin-top: 30px;
+  background: transparent;
+  border: solid 3px white;
+  color: white;
+  padding: 10px;
+  font-size: 1.25em;
+  box-shadow: 0 0 0 3px #a4a4a4;
+  cursor: pointer;
+}
+
+.fechar{
+  position: absolute;
+  color: white;
+  font-size: 1.25em;
+  top: 0px;
+  right: 0px;
+  border: none !important;
+  cursor: pointer;
+  background: transparent;
+  border: solid 3px white;
+
+}
+
+.modal-container.modalup {
+  display: flex;
+}
+
+.modalup .modal-wb {
+  animation: modalframe .3s;
+}
+
+@keyframes modalframe{
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0px, 0);
+  }
+}
